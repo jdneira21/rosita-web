@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+<Layout title="Cebicheria Rosita - Piqueos" >
+
+<div class="container mx-auto px-4 py-4">
+  <h1 class="font-wellowtail text-4xl text-indigo-600">Piqueos</h1>
+  <h2 class="text-gray-800 font-roboto border-b">Degustación de los cinco mejores platos de Cevichería Rosita, perfecto para compartir entre amigos.</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6">
+    
+    <Card title="Ronda Caliente" imagen="/Ronda-caliente-min.jpg" description="Arroz con mariscos + Chicharrón mixto + Chaufa de pescado + Picante de langostinos acompañado de una Leche de Tigre." />
+
+    <Card title="Ronda Fría" imagen="/Ronda-Fria2-min.jpg" description="Ceviche de Pescado + Pulpo al Olivo + Tiradito + Ceviche de conchas negras, acompañado de palta rellena de mariscos. Perfecto para compartir entre amigos.." />
+
+  </div>
+</div>
+
+</Layout>

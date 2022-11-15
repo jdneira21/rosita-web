@@ -1,0 +1,40 @@
+---
+export interface Props {
+  title: string;
+  imagen: string;
+  description: string;
+}
+
+const { title, imagen, description } = Astro.props;
+---
+  <div class="card">
+    <h2>{title}</h2>
+    <img src={imagen} />
+    <p>{description}</p>
+  </div>
+<style>
+.card {
+  @apply flex flex-col;
+}
+
+.card img {
+  @apply rounded-md shadow-md border-2 border-gray-100;
+}
+
+.card h2 {
+  @apply font-wellowtail text-[1.8rem] text-blue-600 text-center;
+}
+
+.card p {
+  @apply font-roboto text-base text-gray-700;
+}
+
+.font-wellowtail {
+  font-family: 'Yellowtail', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+</style>

@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+<Layout title="Cebicheria Rosita - Parihuelas" >
+
+<div class="container mx-auto px-4 py-4">
+  <h1 class="font-wellowtail text-4xl text-indigo-600">Parihuelas</h1>
+  <h2 class="text-gray-800 font-roboto border-b">Elija el pescado de su preferencia y se llevará a cocción en una sopa consistente elaborada con ingredientes tradicionales del Perú y mariscos variados de las playas de Lurín. Es conocida por su propiedades afrodisíacas!.</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6">
+    
+    <Card title="Parihuela 2 Pescados" imagen="/Parihuela-2-Pescados-min.jpg" description="La tradicional Parihuela, esta vez hecha con dos ejemplares típicos del Perú, Tramboyo y Pintadilla." />
+    <Card title="Parihuela de Filete" imagen="/parihuela-de-filetes-min.jpg" description="Delicioso filete que te trae Rosita. solo tiene que probarlo." />
+    <Card title="Parihuela de Lenguado" imagen="/Parihuela-Lenguado-min.jpg" description="Un delicioso plato de Lenguado hecha con los secretos de Rosita." />
+    <Card title="Parihuela de Tramboyo" imagen="/Parihuela-Tramboyo1-min.jpg" description="El Tramboyo es un pez que habita en las peñas, de sabor característico debido a su alimentación a base de algas, tiene un alto contenido de proteínas, nutrientes, calcio, hierro y múltiples vitaminas." />
+
+  </div>
+</div>
+
+</Layout>

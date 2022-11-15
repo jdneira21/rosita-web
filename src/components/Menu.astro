@@ -1,0 +1,91 @@
+<div class="bg-sky-400 shadow border-b border-sky-200 py-1">
+  <div class="container mx-auto px-4 flex justify-between">
+    <div class="text-white font-roboto textPhone">Teléfono: 367 3358</div>
+    <div class="flex gap-x-2">
+      <a class="text-white" target="_blank" title="Facebook Cevicheria Rosita" href="https://www.facebook.com/RositaCev/">
+        <svg style="width:24px;height:24px" class="textPhone" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+        </svg>
+      </a>
+      <a class="text-white" target="_blank" title="Facebook Twitter Rosita" href="https://twitter.com/RositaCev">
+        <svg style="width:24px;height:24px" class="textPhone" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 py-4">
+    <div class="flex flex-row items-center justify-between">
+      <a href="/."><img src="/logo-rosita.png" /></a>
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{ 'flex': open, 'hidden': !open }" class="flex-col grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row">
+
+      <div @click.away="open = false" @mouseleave="open = false" class="relative" x-data="{ open: false }" >
+        <button @click="open = !open" @mouseover="open = true" class="navLinkDrop">
+          <span>Carta</span>
+          <!-- <span>Carta</span> -->
+          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-500 transform md:-mt-1">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <div x-show="open" x-transition:enter.duration.300ms x-transition:leave.duration.500ms
+            class="absolute right-0 w-full mt-0 origin-top-right rounded-md shadow-lg md:w-48 z-10">
+          <div class="px-2 py-2 bg-white border border-blue-200 rounded-md shadow">
+            <a class="navLinkDropLink" href="/entradas">Entradas</a>
+            <a class="navLinkDropLink" href="/recomendados">Recomendados</a>
+            <a class="navLinkDropLink" href="/piqueos">Piqueos</a>
+            <a class="navLinkDropLink" href="/ceviches">Ceviches</a>
+            <a class="navLinkDropLink" href="/arroces">Arroces</a>
+            <a class="navLinkDropLink" href="/chicharrones-y-jaleas">Chicharrones & Jaleas</a>
+            <a class="navLinkDropLink" href="/sudados">Sudados</a>
+            <a class="navLinkDropLink" href="/parihuelas">Parihuelas</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="navLink" href="/promociones">Promociones</a>
+      <a class="navLink" href="#">Galería</a>
+      <a class="navLink" href="/prensa">Prensa</a>
+      <a class="navLink" href="/medios">Medios</a>
+      <a class="navLink" href="/reservaciones">Reservaciones</a>
+      
+    </nav>
+  </div>
+
+<style is:global>
+.navLink {
+  @apply transition text-gray-700 whitespace-nowrap px-2 py-2 mt-2 font-semibold font-montserrat rounded-lg md:mt-0 md:ml-1 hover:text-white hover:bg-blue-500;
+}
+
+.navLinkDrop {
+  @apply transition text-gray-700 flex flex-row items-center w-full px-4 py-2 mt-2 font-montserrat font-semibold text-left hover:bg-blue-500 rounded-lg md:w-auto md:mt-0 md:ml-4 hover:text-white;
+}
+
+.navLinkDropLink {
+  @apply transition block px-4 py-2 mt-2 text-sm font-roboto rounded-md md:mt-0 hover:bg-blue-500 hover:text-white;
+}
+
+.textPhone {
+  text-shadow: 0px 2px 1px #152f52;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-wellowtail {
+  font-family: 'Yellowtail', sans-serif;
+}
+</style>

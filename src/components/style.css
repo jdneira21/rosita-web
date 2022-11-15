@@ -1,0 +1,44 @@
+body {
+  background-image: url("/sun-tornado.svg");
+  background-color: #98D7EE;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+/*  background-attachment: fixed;*/
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-wellowtail {
+  font-family: 'Yellowtail', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yellowtail';
+  src: url('/fonts/Yellowtail-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

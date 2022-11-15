@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+<Layout title="Cebicheria Rosita - Entradas" >
+
+<div class="container mx-auto px-4 py-4">
+  <h1 class="font-wellowtail text-4xl text-indigo-600">Entradas</h1>
+  <h2 class="text-gray-800 font-roboto border-b">Clásicos de la gastronomía peruana, deliciosos aperitivos fríos y calientes elaborados con el mejor sazón que solo Rosita le ofrece.</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6">
+    
+    <Card title="Causa de Cangrejos" imagen="/Causa-cangrejo-min.jpg" description="El cangrejo habita en peñas y son capturados principalmente en la playa de Arica y El Silencio.  Su interior es suave y de sabor particular, muy popular dentro de la gastronomía peruana." />
+
+    <Card title="Causa de Langostinos" imagen="/Causa-de-Langostinos1-min.jpg" description="Es un acompañante ideal para la causa, le otorga consistencia y su sabor sutil combina con la acidez y la suavidad de la papa amarilla." />
+
+    <Card title="Causa de Pulpo al Olivo" imagen="/Causa-pulpo-al-olivo-min.jpg" description="La tradicional Causa, esta vez rellena de finas laminas de pulpo tierno y a su vez cubierto de una crema especial de aceitunas bajo la receta especial de Rosita." />
+
+    <Card title="Choritos a la Chalaca" imagen="/Choritos-a-la-chalaca-min.jpg" description="Choros frescos macerados en limón junto con cebolla, tomate, ají limo, choclo y finas notas de culantro. Perfecto como entrada al plato fuerte, solicite una o media docena." />
+
+    <Card title="Conchitas a la Parmesana" imagen="/Conchitas-a-la-parmesana-min.jpg" description="Conchas de abanico frescas  cubiertas con hilos de queso parmesano y llevadas al horno a gratinar. Ideal para compartir." />
+    <Card title="Leche de Pantera" imagen="/Leche-de-pantera1-min.jpg" description="Cóctel elaborado a base de limón, ají, culantro, quión y las famosas Conchas Negras que le otorga el color distintivo a esta popular bebida." />
+
+    <Card title="Leche de Tigre" imagen="/Palta-Rellena-min.jpg" description="Tradicional en la gastronomía peruana. Elaborado con fondo de pescado, limón, culantro, kion, rocoto y trozos finos de pescado. Altamente energizante e ideal para la resaca." />
+
+    <Card title="Palta rellena de Mariscos" imagen="/pulpo-al-olivo-min.jpg" description="Una de las entradas más solicitadas, consiste en rellenar la palta con langostinos, pulpo, calamar, una concha de abanico y un mix de vegetales cubiertos en una mayonesa aderezada con el toque de Rosita." />
+    
+    <Card title="Pulpo al Olivo" imagen="/Leche-de-tigre1-min.jpg" description="Plato típico peruano, preparado a base de pulpos frescos marinados con el punto exacto de limón, especias y bañado en una cremosa salsa de aceitunas." />
+
+  </div>
+</div>
+
+</Layout>

@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+<Layout title="Cebicheria Rosita - Chicharrones & Jaleas" >
+
+<div class="container mx-auto px-4 py-4">
+  <h1 class="font-wellowtail text-4xl text-indigo-600">Chicharrones & Jaleas</h1>
+  <h2 class="text-gray-800 font-roboto border-b">Una manera diferente de disfrutar de los mariscos y el pescado, si te gusta las texturas tiernas y crocantes esta opción es perfecta para ti, pruebalo con unas gotas de limón y una ensalada fresca!.</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6">
+    
+    <Card title="Chicharrón de Calamar" imagen="/Chicharron-pescado1-min.jpg" description="El más solicitado por nuestros comensales, maravilloso calamar rebosado crocante y tierno al mismo tiempo. Traído directamente las costas de Lurín." />
+    <Card title="Chicharrón de Pescado" imagen="/Chicharron-pescado1-min.jpg" description="Trozos de pescado crocantes por fuera y jugoso por dentro, acompañado de una fresca zarza criolla y mayonesa de la casa." />
+    <Card title="Chicharrón Mixto" imagen="/Chicharron-pescado1-min.jpg" description="Trozos de pescado, pulpo y calamar rebozado y crocante, acompañado de yuca frita y zarza criolla." />
+    <Card title="Jalea de Pescado" imagen="/jalea-de-Pescado-min.jpg" description="Trozos de pescado crocantes acompañado de una salsa criolla al estilo rosita." />
+    <Card title="Jalea Mixta" imagen="/Jalea-Mixta-min.jpg" description="Trozos de pescado, pulpo, camarones empanizado, acompañado de una salsa criolla al estilo Rosita." />
+    <Card title="Jalea Rosita" imagen="/Jalea-Rosita-min.jpg" description="Chirrarrón de Pescado crocante acompañado de un pescado entero, zarza criolla y chifles." />
+
+  </div>
+</div>
+
+</Layout>

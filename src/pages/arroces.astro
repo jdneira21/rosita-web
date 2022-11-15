@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+<Layout title="Cebicheria Rosita - Arroces" >
+
+<div class="container mx-auto px-4 py-4">
+  <h1 class="font-wellowtail text-4xl text-indigo-600">Arroces</h1>
+  <h2 class="text-gray-800 font-roboto border-b">Es uno de los ingredientes fundamentales en nuestra gastronomía, además de versátil porque lo puedes disfrutar en diferentes recetas al estilo oriental o simplemente suave y cremoso acompañado de mariscos.</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6">
+    
+    <Card title="Arroz con Mariscos" imagen="/Arroz-con-mariscos-min.jpg" description="Arroz de consistencia cremosa y sabores gloriosos gracias a diversos frutos marinos, su secreto es la base de mantequilla, vino blanco y nuestro muy preciado ají." />
+
+    <Card title="Chaufa de Langostinos" imagen="/Chaufa-de-Langostinos-min.jpg" description="Mezcla culinaria entre la trascendental comida china y la deslumbrante sazón peruana. Arroz frito con verduras, langostinos frescos y sillao, aromatizado con ajonjolí." />
+
+    <Card title="Chaufa de Mariscos" imagen="/chaufa-de-mariscos-min.jpg" description="El tradicional Chaufa esta vez acompañado de mariscos traídos directamente de las playas del Distrito Lurín, una exquisita mezcla de frescura y sabor oriental." />
+
+    <Card title="Chaufa de Pescado" imagen="/Chaufa-de-pescado-min.jpg" description="Unos de los platos más representativos de la comida chifa, esta variación le ofrece pequeños cubos de pescado apanado que acompañan al clásico chaufa de Rosita." />
+
+  </div>
+</div>
+
+</Layout>

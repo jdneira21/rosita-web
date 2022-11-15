@@ -1,0 +1,154 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Cebicheria Rosita">
+
+
+<style is:inline>
+  @import 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css';
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+</style>
+
+<div class="container px-4 h-56 sm:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[100%] mx-auto">
+  <div class="swiper swiperTop h-64">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/1280x720/?food" alt="Image Slider">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/1280x720/?food-fish" alt="Image Slider">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+
+<!-- <div class="container mx-auto px-4 grid grid-cols-3">
+  <div class="">
+  a
+  </div>
+  <div class="">
+  b
+  </div>
+  <div class="">
+  c
+  </div>
+</div> -->
+
+<div class="container mx-auto px-4 flex flex-row gap-2">
+  <div class="basis-1/2">
+    <h1 class="text-xl font-bold font-montserrat text-blue-700">Nosotros</h1>
+    <p class="font-roboto pb-4 text-gray-800">
+      Estamos ubicados en el valle de Lurín, la zona de mayor desarrollo industrial de la ciudad de Lima, nuestra propuesta está dirigida a brindar a nuestros invitados una experiencia diferente, un ambiente cálido que le permita disfrutar de nuestra exquisita variedad de platos, a base de pescados y mariscos; en una atmósfera intensificada por la brisa marina y una dedicada atención por parte del personal y sobretodo de nuestra anfitriona y excelente cocinera Rosita Osorio.
+    </p>
+
+
+    <h1 class="text-xl font-bold font-montserrat text-blue-700">Nuestra Misión</h1>
+    <p class="font-roboto pb-4 text-gray-800">
+      Promover una actividad gastronómica responsable, inocuidad en el manejo de nuestros alimentos, impulsar el desarrollo de la pesca artesanal, la constante capacitación de nuestros colaboradores y resaltar siempre nuestra herencia gastronómica.
+    </p>
+
+    <h1 class="text-xl font-bold font-montserrat text-blue-700">Nuestra Meta</h1>
+    <p class="font-roboto pb-4 text-gray-800">
+      Ofrecer a nuestros invitados ambientes amplios y agradables. Al igual que otros servicios como movilidad gratuita dentro de la zona de Lurín, estacionamiento y seguridad privada, esto para garantizar siempre la tranquilidad y comodidad de nuestros clientes. Combinado con una esmerada atención para ofrecer una experiencia memorable a quienes nos visiten.
+    </p>
+  </div>
+  <div class="basis-1/4">
+    <h1 class="text-xl font-bold font-montserrat text-blue-700">Nuestra Carta</h1>
+    <p class="font-roboto pb-4 text-gray-800">
+      Los pescados y los mariscos son los protagonistas de esta historia; y la playa nuestra inspiración, quien nos provee las más exquisitos productos que usted degusta en su plato.
+    </p>
+  </div>
+  <div class="basis-1/4">
+    <h1 class="text-xl font-bold font-montserrat text-blue-700">Colaboradores</h1>
+    <p class="font-roboto pb-4 text-gray-800">
+      Somos una familia que crece cada día, nuestro éxito se basa en el constante y mutuo apoyo, en el esfuerzo y las energías que cada uno de nosotros otorga a esta empresa.
+    </p>
+  </div>
+</div>
+
+
+<div class="container mx-auto px-4 py-2">
+  <h1 class="text-xl font-bold font-montserrat text-blue-700">Nuestros Menús</h1>
+  <div class="container mx-auto">
+    <div class="swiper swiperBottom h-64">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/1280x720/?KFC" alt="Image Slider">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/1280x720/?love" alt="Image Slider">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/1280x720/?war" alt="Image Slider">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/1280x720/?happy" alt="Image Slider">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  </div>
+</div>
+
+
+
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiperTop = new Swiper(".swiperTop", {
+    autoplay: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  })
+
+  const swiperBottom = new Swiper(".swiperBottom", {
+    autoplay: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  })
+</script>
+
+</Layout>
